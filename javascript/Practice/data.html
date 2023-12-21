@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form name="form1">
+      <input type="text" onclick="fune()" id="name2" />
+      <input type="submit" onclick="fun()" value="print" id="name" />
+    </form>
+    <p id="p1"></p>
+
+    <script>
+      function fune(){
+        return  document.getElementById("name2").values;
+      }
+      function fun(){
+          document.getElementById("p1").innnerhtml='form1'
+      }
+    </script>
+  </body>
+</html>

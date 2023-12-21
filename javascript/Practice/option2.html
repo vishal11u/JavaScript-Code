@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <select id="item">
+      <option value="" hidden>Choose the Role</option>
+      <option value="Frontend Devloper">Frontend Devloper</option>
+      <option value="Backend Devloper">Backend Devloper</option>
+      <option value="Full Stack Devloper">Full Stack Web Devloper</option>
+      <option value="Frontend Devloper">Java Devloper</option>
+      <option value="Backend Devloper">MERN Devloper</option>
+      <option value="Full Stack Devloper">Software Devloper</option>
+    </select>
+    <select id="item1">
+      <option value="" hidden>Choose the Role</option>
+      <option value="Frontend Devloper">Frontend Devloper</option>
+      <option value="Backend Devloper">Backend Devloper</option>
+      <option value="Full Stack Devloper">Full Stack Web Devloper</option>
+      <option value="Frontend Devloper">Java Devloper</option>
+      <option value="Backend Devloper">MERN Devloper</option>
+      <option value="Full Stack Devloper">Software Devloper</option>
+    </select>
+    <select id="item1">
+      <option value="" hidden>Choose the Role</option>
+      <option value="Frontend Devloper">Frontend Devloper</option>
+      <option value="Backend Devloper">Backend Devloper</option>
+      <option value="Full Stack Devloper">Full Stack Web Devloper</option>
+      <option value="Frontend Devloper">Java Devloper</option>
+      <option value="Backend Devloper">MERN Devloper</option>
+      <option value="Full Stack Devloper">Software Devloper</option>
+    </select>
+
+    <p id="show"></p>
+    <p id="show1"></p>
+    <p id="show2"></p>
+
+    <script>
+      let source = document.querySelector("#item");
+      let target = document.querySelector("#show");
+      source.addEventListener("change", function () {
+        target.textContent = this.value;
+      });
+
+      addEventListener("change", function () {});
+
+      let source1 = document.querySelector("#item1");
+      let target1 = document.querySelector("#show1");
+      source.addEventListener("change1", function () {
+        target.textContent = this.value;
+      });
+
+      addEventListener("change1", function () {});
+
+      let source2 = document.querySelector("#item2");
+      let target2 = document.querySelector("#show2");
+      source.addEventListener("change2", function () {
+        target.textContent = this.value;
+      });
+
+      addEventListener("change2", function () {});
+    </script>
+  </body>
+</html>

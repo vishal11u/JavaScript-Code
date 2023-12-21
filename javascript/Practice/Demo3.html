@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="btn">Click Here</button>
+    <p id="demo"></p>
+
+    <p>This is a p element</p>
+    <p>This is a p element</p>
+
+
+    <script>
+
+ 
+
+        document.getElementById("btn").addEventListener("click" ,displayDate())
+
+
+         function btn(){
+            document.getElementById("demo").innerHTML= Date();
+         }
+    </script>
+</body>
+</html>

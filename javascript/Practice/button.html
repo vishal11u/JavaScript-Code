@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="vvv()"><input type="checkbox"/>Fill</button>
+    
+
+    <form id="f1">
+      <label for="">First name:</label>
+      <input type="text" />
+      <br /><br />
+      <label for="">Middle Name:</label>
+      <input type="text" />
+      <br /><br />
+      <label for="">Last Name:</label>
+      <input type="text" />
+      <br /><br />
+      <label for="">Address:</label>
+      <input type="text" />
+      <br /><br />
+      <label for="">Mobile No:</label>
+      <input type="text" />
+      <br>
+
+      <button id="f2" onclick="vvv()"><a href="form3.html">Register</a></button>
+    </form>
+
+    <script>
+      function vvv() {
+        document.getElementById("f1").innerHTML = "";
+      };
+      function btn (){
+        document.getElementById("f1").style.display=block;
+      }
+    </script>
+  </body>
+</html>

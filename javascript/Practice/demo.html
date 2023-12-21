@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="demo.js"></script>
+  </head>
+  <body>
+    <button onclick="lll()">Click here..</button>
+
+    <script>
+      console.log(123);
+
+      var a = "hello world";
+      console.log(a);
+
+      var a = "string";
+      console.log(a);
+
+      const b = 10 > 20;
+      console.log(b);
+
+      const n = null;
+      console.log(n);
+
+      var arr = ["hi", 123, "code", 321];
+      console.log(arr);
+
+      var lo = ["hello", 456, "code", 654];
+      console.log(lo);
+
+      var cost = ["world", 789, "hello", 987];
+      console.log(cost);
+
+      let obj = { name: "codekul", address: "pune", age: 30 };
+      console.log(obj);
+
+      let srv = { name: "Ramesh", address: "mumbai", age: 21 };
+      console.log(srv);
+
+      let olx = { name: "Suresh", address: "satara", age: 19 };
+      console.log(olx);
+
+      function abc() {
+        console.log("hi");
+      }
+
+      let arry = ["hello", 123, "coding", "css", "javascipt"];
+      console.log(arry);
+      arry.push(1234, obj);
+      console.log(arry);
+      arry.pop();
+      console.log(arry);
+
+      let ar = ["html", "css", "javascript", "ReactJs", "Android"];
+      console.log(ar.indexOf("ReactJs"));
+      console.log(ar.indexOf("css"));
+
+      let jr = ["html", "css", "javascript", "React"];
+      jr.unshift("html");
+      console.log(jr);
+
+      jr.shift("html");
+      console.log(jr);
+
+      let ages = [28, 22, 36, 80];
+      function check(ages) {
+        return ages >= 22;
+      }
+      console.log(ages.filter(check));
+
+      let age = [20, 12, 36, 80];
+      function check(age) {
+        return age >= 22;
+      }
+      console.log(age.find(check));
+
+      let ag = [28, 12, 36, 80];
+      function check(ag) {
+        return ag <= 22;
+      }
+      console.log(ag.find(check));
+
+      let ab = [28, 9, 36, 80];
+      function filter(ab) {
+        return ab <= 22;
+      }
+      console.log(ab.find(filter));
+
+      let ac = [21, 9, 36, 80];
+      function clear(ac) {
+        return ac >= 22;
+      }
+      console.log(ac.find(clear));
+
+      const jrr = [300, 100, 50];
+      console.log(jrr.reduce(func));
+
+      function func(total, num) {
+        return total + num;
+      }
+
+      const trr = [500, 200, 800, 300];
+      console.log(trr.reduce(ufc));
+
+      function ufc(total, num) {
+        return total - num;
+      }
+
+      const vrr = [200, 250, 350];
+      console.log(vrr.map(func));
+
+      function func(total, num) {
+        return total + num;
+      }
+
+      const srr = [80, 50, 10];
+      console.log(srr.map(junc));
+
+      function junc(total, num, letter) {
+        return total * num * letter;
+      }
+
+      const mrr = [20, 30, 40, 50];
+      console.log(mrr.reduce(murc));
+
+      function murc(total, num) {
+        return total - num;
+      }
+
+      const multi = [
+        [10, 20, 14, 11, 85],
+        [85, 1, 22, 52, 52, 52],
+        ["html", "css", "java", "sack"],
+      ];
+      console.log(multi[1][0]);
+
+      const abcz = [
+        [10, 20, 30, 40, 50],
+        [100, 200, 300, 400, 500],
+        ["ab", "bc", "cc", "cd"],
+      ];
+
+      console.log(abcz[1][1]);
+      
+      const yvz = [
+        ["tushar", "jafar", "prem", "mayank"],
+        [16, 25, 85, 46],
+        ["satara", "pune", "mumbai", "delhi"],
+      ];
+
+      console.log(yvz[0][2]);
+      console.log(yvz[1][0]);
+      console.log(yvz[2][2]);
+
+      function lll() {
+        console.log("tushar"), document.write("tushar Nalle");
+      }
+
+      const xuv=[
+        ['tushar','jafar','prem','mayank'],
+        [21,20,18,19],
+        ['satara','kolhapur','dhule','jharkhand']
+
+      ];
+      console.log(xuv[0][3]);
+      console.log(xuv[1][2]);
+      console.log(xuv[2][3]);
+
+    </script>
+  </body>
+</html>

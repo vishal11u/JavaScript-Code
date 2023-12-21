@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Parameter Pass</h1>
+    <button id="Btn">Click</button>
+    <p id="P"></p>
+
+    <script>
+      let x = 10;
+      let y = 20;
+      document.getElementById("Btn").addEventListener("click", function () {
+        myFunction(x, y);
+      });
+
+      function myFunction (x,y){
+        document.getElementById("P").innerHTML= x * y;
+      }
+    </script>
+  </body>
+</html>

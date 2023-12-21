@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    form {
+      border: 1px solid black;
+      height: 210px;
+      width: 280px;
+      padding-left: 20px;
+      padding-top: 15px;
+      margin-left: 35%;
+    }
+  </style>
+  <body>
+    <form>
+      <label for="maths">Maths:-</label>
+      <input id="maths" type="number" /><br /><br />
+
+      <label for="maths1">science:-</label>
+      <input id="maths1" type="number" /><br /><br />
+
+      <label for="maths2">history:-</label>
+      <input id="maths2" type="number" /><br /><br />
+
+      <label for="maths3">Geography:-</label>
+      <input id="maths3" type="number" /><br /><br />
+
+      <button type="button" onclick="Result()">Result</button>
+
+      <table>
+        <tr>
+          <th>Total marks=</th>
+          <br />
+          <td id="t1"></td>
+        </tr>
+      </table>
+    </form>
+
+    <p id="p1"></p>
+
+    <script>
+      function Result() {
+        var maths = document.getElementById("maths").value;
+        var maths1 = document.getElementById("maths1").value;
+        var maths2 = document.getElementById("maths2").value;
+        var maths3 = document.getElementById("maths3").value;
+
+        var totalmarks =
+          parseFloat(maths) +
+          parseFloat(maths1) +
+          parseFloat(maths2) +
+          parseFloat(maths3);
+        //consol.log(totalmarks);
+        var total = (document.getElementById("t1").innerHTML = totalmarks);
+        var sheet = (document.getElementById("t2").innerHTML = totalmarks);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="getdata()">Show Tittle</button>
+
+    <select id="s1" style="display: none;"></select>
+
+    <script>
+        function getdata(){
+
+            let fetchData = fetch("https://jsonplaceholder.typicode.com/albums")
+            .then(response =>{
+                let data = response.json();
+                return data;
+            })
+
+            .then((albums) => {
+                document.getElementById("s1").style.display = "block";
+                for(i = 0; i<=10; i++){
+
+                    let option= document.createElement("option")
+                    option.setAttribute("value", albums[i].id);
+
+                    let title= document.createTextNode(albums[i].title)
+                    option.appendChild(title);
+
+                    document.getElementById("s1").appendChild(option);
+                }
+            });   
+        }
+    </script>
+</body>
+</html>

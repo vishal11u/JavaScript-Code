@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <input type="text" placeholder="Username" id="pass1" />
+      <br /><br />
+      <input type="password" placeholder="Password" id="pass2" />
+      <br /><br />
+      <button type="button" value="submit" onclick="submit()">Submit</button>
+      <br />
+      <p id="p1"></p>
+    </form>
+
+    <script>
+      function submit() {
+        let enteredUsername = document.getElementById("pass1").value;
+        let enteredPassword = document.getElementById("pass2").value;
+
+        if (enteredUsername === "Tushar" && enteredPassword === "123456") {
+          document.getElementById("p1").innerHTML = "Password correct";
+        } else {
+          document.getElementById("p1").innerHTML = "Password incorrect";
+        }
+      }
+    </script>
+  </body>
+</html>

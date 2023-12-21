@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form name="form1">
+      Enter name: <input type="text" name="name" /> <br /><br />
+      Enter Password: <input type="password" name="name1" />
+      <input type="button" onclick="vrr()" value="Create" />
+
+      <p id="p1"></p>
+    </form>
+
+    <script>
+      function vrr() {
+        var name = document.form1.name.value;
+        var name1 = document.form1.name1.value;
+        alert("Welcome:-" +name +name1);
+        document.getElementById("p1").innerHTML = name+ "and" + name1;
+      }
+    </script>
+  </body>
+</html>

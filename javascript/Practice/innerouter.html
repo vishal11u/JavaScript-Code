@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #center{
+        border: 1px solid black;
+        border-radius: 50%;
+        background-color: rgb(128, 227, 128);
+        width: 100px;
+        height: 90px;
+    }
+    #p-1{
+        border: 1px solid black;
+        width: 40px;
+        height: 20px;
+        text-align: center;
+    }
+</style>
+<body>
+    <center>
+     <div id="center">
+        <button style="padding: 3px 8px; background-color: greenyellow; color: rgb(0, 0, 0);border: 1px solid black; border-radius: 10px;margin-top: 15%;" type="button" onclick="func()">Click here</button>
+        <p id="p-1"></p>
+     </div>
+    </center>
+
+
+    <script>
+        function outer(){
+            let counter = 0;
+        
+              function inner(){
+                counter++
+                document.getElementById("p-1").innerHTML= counter;
+                console.log(counter)
+              }
+              return inner
+        }
+        const func = outer()
+        // func()
+        // func()
+        // func()
+        // func()
+        // func()
+
+
+    
+
+
+
+    </script>
+</body>
+</html>

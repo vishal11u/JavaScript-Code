@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function abc(name,city,address,pincode,state){
+            alert('EnterName'+name+'Entercity'+city+'Enteraddress'+address+'Enterpincode'+pincode+'Enterstatename'+state)
+        }
+        function xyz(callback){
+            var name=prompt('Enter Name')
+            var city=prompt('Enter city')
+            var address=prompt('Enter Home Address')
+            var pincode=prompt('Enter Pincode')
+            var state=prompt('Enter State Name')
+            callback(name,city,address,pincode,state)
+        }xyz(abc)
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <style>
+    .error {
+      color: red;
+      margin-bottom: 10px;
+    }
+  </style>
+  <body>
+    <form id="form">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required />
+      <div id="usernameError" class="error"></div>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <div id="emailError" class="error"></div>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+      <div id="passwordError" class="error"></div>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <script>
+      document
+        .getElementById("form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          var username = document.getElementById("username").value;
+          var email = document.getElementById("email").value;
+          var password = document.getElementById("password").value;
+
+          var errors = [];
+
+          if (!username || username.length < 3) {
+            errors.push({
+              id: "usernameError",
+              message: "Username must be at least 3 characters.",
+            });
+          }
+
+          if (!email || !validateEmail(email)) {
+            errors.push({
+              id: "emailError",
+              message: "Please enter a valid email address.",
+            });
+          }
+
+          if (!password || password.length < 8) {
+            errors.push({
+              id: "passwordError",
+              message: "Password must be at least 8 characters.",
+            });
+          }
+
+          if (errors.length > 0) {
+            errors.forEach(function (error) {
+              document.getElementById(error.id).innerText = error.message;
+            });
+          } else {
+            alert("Form submitted successfully.");
+          }
+        });
+
+      function validateEmail(email) {
+        var re =
+          /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(String(email).toLowerCase());
+      }
+    </script>
+  </body>
+</html>

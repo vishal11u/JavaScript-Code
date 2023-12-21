@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <input type="number">
+    <button type="button" onclick="func()">Total</button>
+    <p id="p1"></p> -->
+
+    Num1- <input type="number" id="num1" /> <br /><br />
+    Num2- <input type="number" id="num2" /> <br /><br />
+    <button type="button" id="btn" onclick="btn()">
+      Total
+    </button> <input id="p1" />
+    <!-- <p id="p1"></p> -->
+
+    <script>
+      function btn() {
+        var a, b, sum;
+        var a = parseInt(document.getElementById("num1").value);
+        var b = parseInt(document.getElementById("num2").value);
+
+        sum = a * b;
+        document.getElementById("p1").value = sum;
+      }
+
+      // let a=3
+      // let b=2
+      // var sum=(a +b)
+      // console.log(sum);
+
+      //   function func() {
+      //     let a = 5 * 5;
+      //     let b = 5 + 5;
+      //     var sum = a + b;
+      //     document.getElementById("p1").innerHTML = sum;
+      //   }
+    </script>
+  </body>
+</html>

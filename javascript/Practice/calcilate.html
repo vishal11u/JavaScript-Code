@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table style="border: 1px solid black">
+      <tr>
+        <th>Remark</th>
+        <th>Cheakbox</th>
+      </tr>
+
+      <tr>
+        <td><input type="number" id="text" /></td>
+        <td><input type="checkbox" id="t1" onclick="text()" /></td>
+      </tr>
+      <tr>
+        <td><input type="number" id="text1" /></td>
+        <td><input type="checkbox" id="t2" onclick="text()" /></td>
+      </tr>
+      <tr>
+        <td><input type="number" id="text2" /></td>
+        <td><input type="checkbox" id="t3" onclick="text()" /></td>
+      </tr>
+
+      <tr>
+        <td><input type="number" id="text3" /></td>
+        <td><input type="checkbox" id="t4" onclick="text()" /></td>
+      </tr>
+    </table>
+    <p id="p1"></p>
+    <script>
+      function text() {
+        var abc = document.getElementById("text").value;
+        document.getElementById("p1").innerHTML = abc;
+      }
+
+      // function text() {
+      //     var v1 = document.getElementById("text").value;
+      //     var v2 = (document.getElementById("text1").value;
+      //     var abcd = parseFloat(v1) + parseFloat(v2);
+      //   }
+
+      //   function text() {
+      //     var abcde = document.getElementById("text2").value;
+
+      //     document.getElementById("p1").innerHTML = abcde;
+      //   }
+
+      for (let i = 0; i < 5; i++) {
+        console.log("hi" + i);
+      }
+
+      for (let v = 0; v < 99; v++) {
+        console.log(v);
+
+        if (v < 52) {
+        }
+      }
+
+      for (let j = 0; j < 10; j++) {
+        console.log(j);
+        if (j === 3) {
+          break;
+        }
+        //text += "The number is " + j + "<br>";
+        else if (j) {
+        }
+      }
+
+      for (let i = 0; i < 10; i++) {
+        console.log(i);
+        if (i === 2) {
+          continue;
+        }
+        //text += "The number is " + i + "<br>";
+        else if (i) {
+          console.log(i)
+        }
+      }
+    </script>
+  </body>
+</html>

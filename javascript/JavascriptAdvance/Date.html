@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        text-align: center;
+    }
+    img{
+        display: none;
+    }
+    button{
+        padding: 5px 15px;
+        border-radius: 15px;
+        font-size: 25px;
+        border: none;
+        margin-right: 1rem;
+        cursor: pointer;
+    }
+    .img-sec{
+        display: flex;
+        justify-content: center;
+    }
+    .nav{
+        float: right
+        ;
+    }
+</style>
+<body>
+    <div class="nav">
+        <button onclick="light()">☀️</button>
+        <button onclick="night()">🌑</button>
+    </div>
+
+    <h1>Do You Know "Moye Moye , Moye Moye"</h1>
+    <button onclick="white()">Yes </button>
+    <button onclick="black()">No </button>
+    <p id="p1"></p>
+
+    <div class="img-sec">
+        <img id="img1" src="https://img.freepik.com/free-photo/surprised-happy-girl-pointing-left-recommend-product-advertisement-make-okay-gesture_176420-20191.jpg?size=626&ext=jpg&uid=R123874945&ga=GA1.1.241201418.1699171553&semt=ais" alt="">
+        <img id="img2" src="https://img.freepik.com/free-vector/fuck-you-symbol-comic-style_23-2148686892.jpg?size=626&ext=jpg&uid=R123874945&ga=GA1.1.241201418.1699171553&semt=sph" alt="">
+    </div>
+   
+    <script>
+        const main =document.querySelector(".nav");
+        console.log(main)
+
+        function white(){
+            document.getElementById("img2").style.display='none'
+            document.getElementById("img1").style.display='block'
+        };
+
+        function black(){
+            document.getElementById("img1").style.display='none'
+            document.getElementById("img2").style.display='block'
+        }
+        function light(){
+            document.body.style.backgroundColor='white';
+            document.body.style.color='black';
+        }
+        function night(){
+            document.body.style.backgroundColor='black';
+            document.body.style.color='white'
+        }
+        
+    </script>
+    
+</html>

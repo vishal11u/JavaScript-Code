@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form></form>
+
+    <script>
+      let fetchdata = fetch(
+        "https://rapidapi.com/aidangig/api/youtube-to-mp4/details"
+      );
+      console
+        .log(fetchdata)
+        .then((json) => {
+          console.log(json);
+          let data = json.json();
+          console.log(data);
+          return data;
+        })
+        .then((result) => {
+          console.log(result);
+        });
+      console.log(fetchdata);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Two functions run when click on button</h1>
+    <button id="myBtn">Click</button>
+
+    <script>
+      var x = document.getElementById("myBtn");
+      x = addEventListener("click", click1);
+      x = addEventListener("click", click2);
+
+      function click1() {
+        alert("First Time");
+        prompt("Enter Name");
+      }
+
+      function click2() {
+        alert("Second Password");
+        prompt("Enter Password");
+      }
+    </script>
+  </body>
+</html>

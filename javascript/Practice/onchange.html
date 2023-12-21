@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+ 
+     <select id="info">
+      <option value="">Items</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+
+    <select id="info">
+      <option value="">Remark</option>
+      <option value="Excellent">Excellent</option>
+      <option value="Good">Good</option>
+      <option value="Poor">Poor</option>
+    </select> 
+
+    <select id="info">
+      <option value="">Subject</option>
+      <option value="Marathi">Marathi</option>
+      <option value="nglish">English</option>
+      <option value="Hindi">Hindi</option>
+    </select> 
+    <br>
+    <input type="text" id="Name" placeholder="Name" />
+    <br /><br />
+    <input type="text" id="Age" placeholder="Age" />
+    <br /><br />
+    <input type="text" id="City" placeholder="City" />
+    <br /><br />
+    <button type="button" onclick="btn()">Submit</button>
+    <br /><br />
+    <tr id="Tablerow" style="border: 1px solid black;">
+      <th>Name</th>
+      <th>Age</th>
+      <th>City</th>
+    </tr> 
+
+    <script>
+      function btn() {
+        var name = document.getElementById("Name").value;
+        var age = document.getElementById("Age").value;
+        var city = document.getElementById("City").value;
+
+        var Table = document.getElementById("Tablerow");
+
+        var row = Table.insertRow(Table.row.length);
+
+        var cell = insertCell(0);
+        cell.innerHTML = name;
+        var cell = insertCell(1);
+        cell.innerHTML = age;
+        var cell = insertCell(2);
+        cell.innerHTML = city;
+
+        document.getElementById("Name").value = "";
+        document.getElementById("Age").value = "";
+        document.getElementById("City").value = "";
+      }
+        let source = document.querySelector("#item");
+        let target = document.querySelector("#show");
+        source.addEventListener("change", function () {
+          target.textContent = this.value;
+        });
+
+        addEventListener("change", function () {});
+    </script>
+  </body>
+</html>
